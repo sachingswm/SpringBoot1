@@ -80,6 +80,10 @@ public class DishService {
     }
     public List<Dish> getDishesByIngredient(String ingredient)
     {
-        return dishDao.getDishesByKeyIngredient(ingredient);
+
+        List<Dish> dishes = dishDao.getDishesByKeyIngredient(ingredient);
+
+        System.out.println(dishes);
+        return dishes;
     }
 }

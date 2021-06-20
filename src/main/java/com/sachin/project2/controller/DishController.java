@@ -31,7 +31,7 @@ public class DishController {
         dishService.modifyDish(dish);
     }
 
-    @GetMapping("//getDishByIngredient/{type}")
+    @GetMapping("/getDishByType/{type}")
     public List<Response_Dish> getDishesByType(@PathVariable("type") String type)
     {
         return dishService.getDishesByType(type);
